@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+char line[150];
+int i,vowels;
+vowels=0;
+printf("enter a string");
+scanf("%[^\n]",line);
+for(i=0;line[i]!='\0';i++)
+{
+if(line[i]=='a'||line[i]=='e'||line[i]=='i')
+{
+vowels++;
+}
+}
+printf("vowels:%d",vowels);
+}
